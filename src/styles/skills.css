@@ -1,0 +1,201 @@
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+.div-skills {
+  overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+  }
+
+
+  .titulo-skills{
+    color: #9340FF;
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+  
+  .tecnologias {
+    width: 100%;
+    height: 14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: slideInLeft 2s ease-in-out;
+   
+  }
+    
+  .tecnologias2 {
+    width: 100%;
+    height: 14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: slideInRight 2s ease-in-out;
+   
+  }
+
+  
+  
+  .icons-tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+
+
+  /*
+  aqui van todas las tecnologias de la primera linea
+  */
+  
+  .icon1 {
+    width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+  
+    background-image: url("../assets/js.png");
+    background-size: cover;
+  }
+  .icon2 {
+    width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .icon3 {
+    width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+  
+    background-image: url("../assets/redux.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .icon4 {
+    /* Estilos del icono */
+     width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+  
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+     background-position: 0 2em;
+  }
+  .icon5 {
+    /* Estilos del icono */
+    /* Estilos del icono */
+     width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+  
+    background-image: url("../assets/mongoose.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .icon6 {
+    /* Estilos del icono */
+     width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+  
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 3.5em;
+  }
+  
+
+
+  /*
+  aqui van todas las tecnologias de la segunda linea
+  */
+
+
+  .icon7 {
+    width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+  
+    background-image: url("https://cdn.iconscout.com/icon/free/png-256/free-typescript-1174965.png?f=webp");
+    background-size: cover;
+  }
+  .icon8 {
+    width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .icon9 {
+    width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+  
+    background-image: url("https://symbols.getvecta.com/stencil_28/61_sql-database-generic.90b41636a8.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .icon10 {
+    /* Estilos del icono */
+     width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+  
+    background-image: url("https://cdn.freebiesupply.com/logos/large/2x/sequelize-logo-png-transparent.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+  }
+  .icon11 {
+    /* Estilos del icono */
+    /* Estilos del icono */
+     width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+  
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .icon12 {
+    /* Estilos del icono */
+     width: 9em;
+    height: 9em;
+    /* Estilos del icono */
+  
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Socket-io.svg/1024px-Socket-io.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  

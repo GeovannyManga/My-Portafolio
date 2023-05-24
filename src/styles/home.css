@@ -1,0 +1,188 @@
+
+@keyframes typing {
+    from { 
+        width: 0; 
+        opacity: 0;
+        border-right: 0.15em solid yellow;
+    }
+    to { width: 45%; 
+    opacity: 1;
+visibility: visible;
+border-right: 0.15em solid yellow;}
+  }
+  
+
+  @keyframes typin {
+    from { 
+        width: 0; 
+        opacity: 0;
+        border-right: 0.15em solid yellow;
+    }
+    to { width: 60%; 
+    opacity: 1;
+visibility: visible;}
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: yellow;}
+    100% {visibility: hidden;}
+  }
+  
+  @keyframes blink-caret2 {
+    from, to { border-color: transparent; }
+    50% { border-color: yellow;}
+  }
+
+
+  @keyframes entrada2 {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+  }
+
+.div-home{
+    margin-left: 2em;
+    display: flex;
+    overflow: hidden;
+}
+
+.div-name{
+    margin-top: 4.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.hello{
+    width: 6.5em;
+    font-size: 3.6em;
+    color: var(--text-color);
+    margin-bottom: 0.3em;
+    overflow: hidden; /* Ocultar el contenido que excede el tamaño del contenedor */
+  /* Efecto de cursor */
+  white-space: nowrap; /* Evitar el salto de línea */
+  margin: 0; /* Eliminar márgenes para un mejor aspecto */
+  animation: typing 3.5s steps(30, end), blink-caret2 0.75s step-end infinite;
+}
+
+.Geo-name{
+    opacity: 0;
+    width: 8em;
+    font-size: 3.6em;
+    color: var(--text-color);
+    overflow: hidden; /* Ocultar el contenido que excede el tamaño del contenedor */
+  border-right: 0.15em solid yellow; /* Efecto de cursor */
+  white-space: nowrap; /* Evitar el salto de línea */
+  margin: 0; /* Eliminar márgenes para un mejor aspecto */
+  animation: typin 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-delay: 3.7s;
+}
+.show-element {
+    opacity: 1; /* Mostrar el elemento */
+  }
+
+.skills{
+    font-size: 1.4em;
+    color: var(--text-color);
+    margin-top: 2em;
+    width: 25em;
+    height: 5em;
+}
+
+.texto{
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+}
+
+.ilustraciones{
+  margin-top: 0;
+  width: 45em;
+  height: 32em;
+  opacity: 0;
+    transform: translateX(-100%);
+    animation: entrada2 5s ease-out forwards;
+  
+}
+.image-flete {
+  position: absolute;
+  margin-top: 0;
+  width: 43em;
+  height: 34em;
+  background-image: url(../assets//rulo.png);
+  background-size: 170%;
+  background-position: 110% 80%;
+  background-repeat: no-repeat;
+}
+
+
+.foto{
+    position: relative;
+    width: 24em;
+    height: 24em;
+    margin-top: 6em;
+    margin-left: 15%;
+    margin-right: auto;
+    background-image: url("../assets/yo.jpeg");
+    background-size:cover;
+    border-radius: 50%;
+  }
+
+  .ilustra2 {
+    position: relative;
+    top: -12em;
+    left: 2em;
+    z-index: 9999;
+    width: 15em;
+    height: 15em;
+    background-image: url("../assets/detalle.png");
+    background-size: cover;
+    background-color: transparent;
+  }
+  
+  
+  
+.spam-get{
+  color: var(--text-color);
+  font-size: 1.5em;
+}
+
+.icon{
+  width: 2em;
+  height: 2em;
+}
+
+.line{
+  width: 10em;
+  height: 1px;
+  background-color: yellow;
+}
+
+.icons {
+  margin-left: 2em;
+  width: 25em;
+  display: flex;
+  text-align: center;
+  margin-top: 3em;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+  .btn-contact{
+    border: solid yellow;
+    margin-top: 2em;
+    background-color: black;
+    font-size: 1.5em;
+    width: 15rem;
+    height: 4rem; /* Agrega la propiedad height con el valor deseado */
+    color: white;
+  }

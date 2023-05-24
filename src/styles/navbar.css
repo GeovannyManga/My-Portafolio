@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap");
+
+:root {
+  --background-color: #101728;
+  --text-color: white;
+
+}
+
+* {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  transition: background-color 1s ease;
+}
+
+.sun-icon svg {
+    color: black;
+    width: 2em;
+    height: 1.5em;
+    cursor: pointer;
+  }
+  
+  .moon-icon svg {
+    color: white;
+    width: 2em;
+    height: 1.5em;
+    cursor: pointer;
+  }
+  
+
+
+.sun-icon svg:hover {
+    color: rgb(0, 16, 155);
+    width: 2em;
+    height: 1.5em;
+  }
+  
+  .moon-icon svg:hover {
+    color: rgb(228, 201, 80);
+    width: 2em;
+    height: 1.5em;
+  }
+
+.div-navbar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  justify-items: center;
+}
+
+.div-logo {
+  width: 15em;
+  height: 5.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 4em;
+  height: 4em;
+}
+
+.titulo-logo {
+  margin-left: 0.5em;
+  font-size: 1em;
+  color: var(--text-color);
+}
+
+.ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50em;
+  height: 5em;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 1.5em;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+.li {
+  font-size: 1.5em;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+}

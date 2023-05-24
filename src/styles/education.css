@@ -1,0 +1,225 @@
+@keyframes moveFlag {
+  0% {
+    transform: translateX(-6%);
+  }
+  100% {
+    transform: translateX(6%);
+  }
+}
+
+.div {
+  background-color: rgba(147, 64, 255, 0.5);
+}
+
+.principal {
+  display: flex;
+}
+
+.text-education {
+  margin-left: 4em;
+  margin-top: 4em;
+  width: 40em;
+  height: 26em;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-education {
+  font-size: 4em;
+  color: var(--text-color);
+}
+
+.span-education {
+  font-size: 1.5em;
+  color: var(--text-color);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.div-bandera {
+  position: relative;
+  margin-left: 8em;
+  margin-top: 8em;
+  width: 35em;
+  height: 20em;
+  z-index: 9999;
+}
+
+.image-div {
+  width: 35em;
+  height: 19em;
+  background-image: url("https://assets.soyhenry.com/logoOG.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  animation: moveFlag 5s infinite alternate linear;
+}
+
+.div-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(147, 64, 255, 0.5);
+  box-shadow: 0px 0px 50px 10px rgba(147, 64, 255, 0.849);
+  z-index: -1;
+}
+
+
+
+/*
+@media para las dimensiones 1280px de ancho
+*/
+
+
+@media (max-width: 1280px) {
+
+  @keyframes moveFlag {
+    0% {
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(-5%);
+    }
+  }
+  
+  .text-education {
+    margin-left: 2em;
+  }
+  .div-fondo{
+    left: -3em;
+  }
+
+  .image-div{
+    margin-right: 3em;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .span-education{
+    font-size: 1em;
+  }
+  .title-education{
+    font-size: 3em;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 912px) {
+  .principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .span-education {
+    text-align: center;
+    font-size: 3.5em;
+  
+  }
+  .div-bandera {
+    position: relative;
+    margin-left: 8em;
+    margin-top: 170vh;
+    width: 35em;
+    height: 20em;
+    z-index: 9999;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 110%;
+  }
+  .span-education {
+    text-align: center;
+  }
+  
+  @media (min-width: 280px) and (max-width: 412px) {
+    
+    @keyframes moveFlag {
+        0% {
+          transform: translateX(-10%);
+        }
+        100% {
+          transform: translateX(-5%);
+        }
+      }
+      
+      .text-education {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .div-fondo{
+        left: -3em;
+      }
+      
+      .image-div{
+        margin-right: 0em;
+      }
+      .principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border: solid red;
+        width: 100vh
+      }
+    
+      .span-education {
+        text-align: center;
+      }
+      
+    }
+  }
+  
+  @media (max-width: 280px) {
+    .principal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: 140vh;
+    }
+    .span-education {
+      text-align: center;
+    }
+    
+  }
+  @media (max-width: 540px) {
+    .principal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: 140vh;
+    }
+    .span-education {
+      text-align: center;
+    }
+  
+  }
