@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import{ useState, useRef, useEffect } from 'react';
 import {  } from "../styles/showmodals.css";
 import cancion1 from "../assets/como-el-siervo.mp3";
 import cancion2 from "../assets/Dios sabe.mp3";
@@ -11,8 +11,6 @@ const MiniReproductorAudio = () => {
     { src: cancion1, title: 'Como el Siervo' },
     { src: cancion2, title: 'Dios Sabe' },
     { src: cancion3, title: 'Tan Solo Dios' },
-    { src: 'URL_CANCION_4.mp3', title: 'Canción 4' },
-    { src: 'URL_CANCION_5.mp3', title: 'Canción 5' },
   ]);
 
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
@@ -20,22 +18,38 @@ const MiniReproductorAudio = () => {
   const audioRef = useRef(null);
 
   useEffect(() => {
-    audioRef.current.src = songs[currentSongIndex].src;
-    audioRef.current.play();
-    setIsPlaying(true);
+    const audioElement = audioRef.current;
+    const playOnLoad = () => {
+      const playPromise = audioElement.play();
+
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          setIsPlaying(true);
+        }).catch(error => {
+          console.error('Error al reproducir el audio:', error);
+        });
+      }
+    };
+
+    audioElement.src = songs[currentSongIndex].src;
+    audioElement.addEventListener('canplaythrough', playOnLoad);
 
     return () => {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
+      audioElement.removeEventListener('canplaythrough', playOnLoad);
+      audioElement.pause();
+      audioElement.currentTime = 0;
     };
   }, [currentSongIndex]);
 
   const toggleReproducir = () => {
+    const audioElement = audioRef.current;
+
     if (isPlaying) {
-      audioRef.current.pause();
+      audioElement.pause();
     } else {
-      audioRef.current.play();
+      audioElement.play();
     }
+
     setIsPlaying(!isPlaying);
   };
 
@@ -51,10 +65,10 @@ const MiniReproductorAudio = () => {
 
   const quitarReproduccion = () => {
     setIsPlaying(false);
-    audioRef.current.pause();
-    audioRef.current.currentTime = 0;
+    const audioElement = audioRef.current;
+    audioElement.pause();
+    audioElement.currentTime = 0;
   };
-
   return (
     <div style={{ backgroundColor: '#9340FF', color: 'white' }} className='div-re'>
       <audio className='audio' ref={audioRef} src={songs[currentSongIndex].src}></audio>

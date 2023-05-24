@@ -6,7 +6,7 @@ const Welcome = () => {
     <div className="div-principal">
         <div className="div-central">
           <h1 className="title-welcome">Welcome to My Portfolio</h1>
-          <Link to={"/home"} class="link">VIEW</Link>
+          <Link to={"/home"} className="link">VIEW</Link>
         </div>
     </div>
   );
