@@ -186,3 +186,59 @@ visibility: visible;}
     height: 4rem; /* Agrega la propiedad height con el valor deseado */
     color: white;
   }
+
+
+
+
+@media (max-width: 1280px) {
+  .div-home{
+    position: absolute;
+    border: solid red;
+    display: flex;
+    flex-direction:column-reverse;
+    width: 200%;
+    height: 200%;
+    margin-left: 0em;
+  }
+  .foto{
+    position: relative;
+    width: 24em;
+    height: 24em;
+    margin-top: 6em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../assets/yo.jpeg");
+    background-size:cover;
+    border-radius: 50%;
+  }
+  .ilustraciones{
+    margin-top: 0;
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+      transform: translateX(-100%);
+      animation: entrada2 5s ease-out forwards;
+    
+  }
+
+  .div-name{
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+}
+
+.ilustra2 {
+  position: relative;
+  top: -12em;
+  left: 2em;
+  z-index: 9999;
+  width: 15em;
+  height: 15em;
+  background-image: url("../assets/detalle.png");
+  background-size: cover;
+  background-color: transparent;
+}
+
+
+
+}

@@ -88,3 +88,19 @@
   
   
   
+
+  @media (max-width: 1024px) {
+    .div-about{
+      margin-top: 10em;
+      display: flex;
+      flex-direction: column;
+      width: 60em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .text{
+    font-size: 2em;
+    }
+
+  }
