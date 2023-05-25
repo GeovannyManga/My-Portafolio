@@ -1,16 +1,19 @@
 @keyframes animate4{
     0%{
       transform: translatex(100px);
+      visibility: hidden;
       opacity: 0;
     }
     50%{
         transform: translatex(100px);
         opacity: 0.2;
+        visibility: hidden;
       }
 
     50%{
         transform: translatex(100px);
         opacity: 0.5;
+        visibility: hidden;
       }
       80%{
         transform: translatex(100px);

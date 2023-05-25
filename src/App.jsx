@@ -19,7 +19,6 @@ function App() {
   return (
     <div className='app'>
       <NavBar/>
-     {!isWelcomePage && <ShowModal/>}
      <Routes>
       <Route exact path='/' element={<Welcome/>}/>
       <Route exact path='/home' element={<Home/>}/>
@@ -31,6 +30,7 @@ function App() {
      </Routes>
      
      {/* Mostrar ShowModal en todas partes excepto en /welcome */}
+     {!isWelcomePage && <ShowModal/>}
     </div>
   )
 }
